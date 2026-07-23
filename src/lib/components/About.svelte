@@ -109,6 +109,7 @@
 		font-size: 1.4rem;
 		color: var(--accent-cyan);
 		margin-top: 2px;
+		flex-shrink: 0;
 	}
 
 	.highlight-subtext {
@@ -136,7 +137,41 @@
 
 	@media (max-width: 768px) {
 		.about-box {
-			padding: 24px;
+			padding: 24px 18px;
+			border-radius: var(--radius-lg);
+		}
+
+		.about-text h3 {
+			font-size: 1.6rem;
+		}
+
+		.about-text p {
+			font-size: 0.95rem;
+			line-height: 1.65;
+		}
+	}
+
+	@media (max-width: 480px) {
+		.about-box {
+			padding: 20px 14px;
+		}
+
+		.about-profile-img {
+			max-width: 190px;
+			border-radius: 16px;
+		}
+
+		.highlight-item {
+			padding: 12px;
+			gap: 12px;
+		}
+
+		.highlight-icon {
+			font-size: 1.2rem;
+		}
+
+		.highlight-subtext {
+			font-size: 0.82rem;
 		}
 	}
 </style>
