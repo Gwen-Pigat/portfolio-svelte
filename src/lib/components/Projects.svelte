@@ -146,3 +146,157 @@
 		</div>
 	</div>
 </section>
+
+<style>
+	.projects-grid {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: 32px;
+	}
+
+	.project-card {
+		background: var(--bg-card);
+		border: 1px solid var(--border-light);
+		border-radius: var(--radius-xl);
+		overflow: hidden;
+		transition: all var(--transition-normal);
+		display: flex;
+		flex-direction: column;
+		position: relative;
+	}
+
+	.project-card:hover {
+		transform: translateY(-8px);
+		border-color: var(--border-glow);
+		box-shadow: var(--shadow-card), 0 0 30px rgba(99, 102, 241, 0.15);
+	}
+
+	.project-thumb-wrapper {
+		position: relative;
+		width: 100%;
+		height: 260px;
+		overflow: hidden;
+		background: #000;
+	}
+
+	.project-thumb {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+	}
+
+	.project-card:hover .project-thumb {
+		transform: scale(1.05);
+	}
+
+	.project-badge-tag {
+		position: absolute;
+		top: 16px;
+		left: 16px;
+		padding: 6px 14px;
+		background: rgba(7, 9, 19, 0.85);
+		backdrop-filter: blur(12px);
+		border: 1px solid var(--border-light);
+		border-radius: 30px;
+		font-size: 0.75rem;
+		font-weight: 700;
+		color: var(--accent-cyan);
+		z-index: 1;
+	}
+
+	.project-badge-tag:global(.badge-purple) { color: var(--accent-purple); }
+	.project-badge-tag:global(.badge-emerald) { color: var(--accent-emerald); }
+	.project-badge-tag:global(.badge-rose) { color: var(--accent-rose); }
+
+	.project-info {
+		padding: 28px;
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+	.project-header-meta {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 12px;
+	}
+
+	.project-name {
+		font-size: 1.6rem;
+		font-weight: 800;
+		letter-spacing: -0.01em;
+	}
+
+	.project-desc {
+		color: var(--text-secondary);
+		font-size: 0.95rem;
+		line-height: 1.6;
+		margin-bottom: 20px;
+	}
+
+	.project-tech-tags {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 8px;
+		margin-bottom: 24px;
+	}
+
+	.tech-pill {
+		padding: 4px 10px;
+		background: rgba(255, 255, 255, 0.05);
+		border: 1px solid var(--border-light);
+		border-radius: var(--radius-sm);
+		font-family: var(--font-mono);
+		font-size: 0.75rem;
+		color: var(--text-muted);
+	}
+
+	.project-footer-links {
+		margin-top: auto;
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: 1024px) {
+		.projects-grid {
+			grid-template-columns: 1fr;
+			gap: 28px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.project-header-meta {
+			flex-direction: column;
+			align-items: flex-start;
+			gap: 8px;
+		}
+
+		.project-footer-links {
+			flex-direction: column;
+			width: 100%;
+			gap: 10px;
+		}
+
+		.project-footer-links :global(.btn) {
+			width: 100%;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.project-thumb-wrapper {
+			height: 200px;
+		}
+
+		.project-info {
+			padding: 20px 16px;
+		}
+
+		.project-name {
+			font-size: 1.35rem;
+		}
+	}
+</style>

@@ -39,3 +39,55 @@
 		</div>
 	</div>
 </footer>
+
+<style>
+	.footer {
+		padding: 60px 0 30px 0;
+		border-top: 1px solid var(--border-light);
+		background: #04060c;
+	}
+
+	.footer-content {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
+
+	.footer-links-group {
+		display: flex;
+		gap: 20px;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+
+	.footer-copy {
+		color: var(--text-muted);
+		font-size: 0.85rem;
+		text-align: center;
+		padding-top: 30px;
+		border-top: 1px solid rgba(255, 255, 255, 0.05);
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 10px;
+		flex-wrap: wrap;
+	}
+
+	.footer-orizenh-img {
+		height: 22px;
+		opacity: 0.85;
+	}
+
+	@media (max-width: 1024px) {
+		.footer-content {
+			flex-direction: column;
+			gap: 24px;
+			text-align: center;
+		}
+
+		.footer-links-group {
+			justify-content: center;
+		}
+	}
+</style>

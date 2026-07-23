@@ -177,3 +177,173 @@
 		<span id="toast-message">{toastMessage}</span>
 	</div>
 </div>
+
+<style>
+	.contact-grid {
+		display: grid;
+		grid-template-columns: 0.9fr 1.1fr;
+		gap: 48px;
+	}
+
+	.contact-info-card {
+		background: var(--bg-card);
+		border: 1px solid var(--border-light);
+		border-radius: var(--radius-xl);
+		padding: 36px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.contact-info-desc {
+		color: var(--text-secondary);
+		margin-top: 10px;
+	}
+
+	.contact-method-list {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		margin-top: 24px;
+	}
+
+	.contact-method-item {
+		display: flex;
+		align-items: center;
+		gap: 16px;
+		text-decoration: none;
+		color: var(--text-primary);
+		padding: 14px;
+		background: rgba(255, 255, 255, 0.03);
+		border-radius: var(--radius-md);
+		border: 1px solid var(--border-light);
+		transition: all var(--transition-fast);
+	}
+
+	.contact-method-item:hover {
+		background: rgba(99, 102, 241, 0.1);
+		border-color: var(--border-glow);
+		transform: translateX(4px);
+	}
+
+	.contact-method-subtext {
+		color: var(--text-secondary);
+		font-size: 0.85rem;
+	}
+
+	.contact-footer-copy {
+		margin-top: 30px;
+		font-size: 0.8rem;
+		color: var(--text-muted);
+	}
+
+	.contact-form-card {
+		background: var(--bg-card);
+		backdrop-filter: blur(20px);
+		border: 1px solid var(--border-light);
+		border-radius: var(--radius-xl);
+		padding: 36px;
+	}
+
+	.form-group {
+		margin-bottom: 20px;
+	}
+
+	.form-label {
+		display: block;
+		font-size: 0.85rem;
+		font-weight: 600;
+		color: var(--text-secondary);
+		margin-bottom: 8px;
+	}
+
+	.form-control {
+		width: 100%;
+		background: var(--bg-input);
+		border: 1px solid var(--border-light);
+		border-radius: var(--radius-md);
+		padding: 14px 18px;
+		color: var(--text-primary);
+		font-family: var(--font-sans);
+		font-size: 0.95rem;
+		transition: border-color var(--transition-fast);
+	}
+
+	.form-control:focus {
+		outline: none;
+		border-color: var(--accent-indigo);
+		box-shadow: 0 0 15px rgba(99, 102, 241, 0.3);
+	}
+
+	textarea.form-control {
+		resize: vertical;
+		min-height: 120px;
+	}
+
+	.toast-container {
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+		z-index: 1000;
+	}
+
+	.toast {
+		padding: 14px 24px;
+		background: var(--bg-card);
+		backdrop-filter: blur(16px);
+		border: 1px solid var(--accent-emerald);
+		border-radius: var(--radius-md);
+		color: #fff;
+		font-size: 0.9rem;
+		font-weight: 600;
+		box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+		display: flex;
+		align-items: center;
+		gap: 12px;
+		transform: translateY(100px);
+		opacity: 0;
+		transition: all var(--transition-normal);
+	}
+
+	.toast:global(.show) {
+		transform: translateY(0);
+		opacity: 1;
+	}
+
+	@media (max-width: 1024px) {
+		.contact-grid {
+			grid-template-columns: 1fr;
+			gap: 36px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.contact-info-card,
+		.contact-form-card {
+			padding: 24px;
+		}
+	}
+
+	@media (max-width: 640px) {
+		.form-control {
+			font-size: 16px;
+			padding: 12px 14px;
+		}
+
+		.toast-container {
+			bottom: 16px;
+			left: 16px;
+			right: 16px;
+			max-width: calc(100vw - 32px);
+			margin: 0 auto;
+		}
+
+		.toast {
+			width: 100%;
+			font-size: 0.85rem;
+			padding: 12px 16px;
+			justify-content: center;
+			text-align: center;
+		}
+	}
+</style>
