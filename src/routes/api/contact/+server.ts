@@ -46,7 +46,10 @@ export const POST: RequestHandler = async ({ request }) => {
 							user: smtpUser,
 							pass: smtpPass
 						}
-					: undefined
+					: undefined,
+			connectionTimeout: 8000, // 8 secondes max pour se connecter
+			greetingTimeout: 8000,   // 8 secondes max pour recevoir le message du serveur SMTP
+			socketTimeout: 10000     // 10 secondes max d'inactivité
 		});
 
 		const mailOptions = {
@@ -82,9 +85,13 @@ export const POST: RequestHandler = async ({ request }) => {
 		});
 	} catch (err: any) {
 		console.error(`⚠️ Erreur lors de l'envoi de l'email :`, err);
-		return json({
-			status: 'warning',
-			message: "Message reçu mais erreur lors de l'envoi SMTP (Vérifiez la clé SMTP Brevo)."
-		});
+		return json(
+			{
+				status: 'error',
+				error: "Erreur d'envoi d'e-mail",
+				details: err?.message || 'Erreur lors de la connexion SMTP Brevo.'
+			},
+			{ status: 500 }
+		);
 	}
 };
