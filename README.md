@@ -2,8 +2,6 @@
 
 Modern, fullstack developer portfolio website built with **SvelteKit 2**, **Svelte 5**, **TypeScript**, and **Tailwind CSS v4**.
 
-![Orizenh Portfolio](/static/images/tasker_mockup.png)
-
 ## 🚀 Key Features
 
 - **Cyber-Modern Glassmorphism Aesthetic**: Dark mode design system with ambient floating particle background canvas and vibrant gradients.
