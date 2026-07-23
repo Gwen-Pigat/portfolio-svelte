@@ -36,8 +36,10 @@ export const POST: RequestHandler = async ({ request }) => {
 			});
 		}
 
-		// Option A: Brevo HTTP API v3 (Si BREVO_API_KEY est configurée dans .env)
-		const brevoApiKey = env.BREVO_API_KEY;
+		// Option A: Brevo HTTP API v3 (Si BREVO_API_KEY ou une clé xkeysib est fournie)
+		const brevoApiKey =
+			env.BREVO_API_KEY ||
+			(env.SMTP_PASS && env.SMTP_PASS.startsWith('xkeysib-') ? env.SMTP_PASS : undefined);
 		if (brevoApiKey) {
 			console.log("🚀 Envoi via l'API HTTP Brevo (Port 443)...");
 			const response = await fetch('https://api.brevo.com/v3/smtp/email', {
