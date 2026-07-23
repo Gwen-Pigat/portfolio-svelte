@@ -278,6 +278,10 @@ body {
 
 /* Global Responsiveness for Containers & Sections */
 @media (max-width: 768px) {
+  .glow-orb {
+    display: none !important;
+  }
+
   .container {
     padding: 0 20px;
   }
