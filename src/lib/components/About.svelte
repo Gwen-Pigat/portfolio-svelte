@@ -4,7 +4,7 @@
 			<div class="about-profile-wrapper">
 				<img
 					src="/images/gwenael_pigat.jpg"
-					alt="Gwenaël PIGAT - Développeur Web PHP / Symfony & Tech Lead"
+					alt="Gwenaël PIGAT - Développeur Web Fullstack & Tech Lead"
 					class="about-profile-img"
 				/>
 			</div>
@@ -13,20 +13,18 @@
 				<span class="section-tag">À Propos</span>
 				<h3>Gwenaël PIGAT</h3>
 				<p>
-					Spécialisé en <strong>PHP et Symfony</strong>, je suis un développeur web passionné avec une solide
-					expérience dans la conception et le déploiement de sites internet et d'applications web d'entreprise.
+					En tant que <strong>Développeur Web Fullstack & Tech Lead</strong>, je conçois et déploie des applications web sur-mesure, des plateformes SaaS évolutives et des outils réactifs en m'appuyant sur les meilleures technologies Frontend et Backend.
 				</p>
 				<p>
-					En tant que Tech Lead et développeur fullstack, j'accorde une importance majeure à la propreté du code, au
-					respect des standards de sécurité et à la qualité de l'expérience utilisateur.
+					Passionné par l'architecture logicielle et l'expérience utilisateur, j'accorde une importance majeure à la propreté du code, au respect des standards de sécurité, à l'optimisation des performances et à la scalabilité.
 				</p>
 
 				<div class="leadership-highlights">
 					<div class="highlight-item">
-						<i class="fa-brands fa-symfony highlight-icon icon-purple"></i>
+						<i class="fa-solid fa-layer-group highlight-icon icon-purple"></i>
 						<div>
-							<strong>Expertise PHP & Symfony</strong>
-							<p class="highlight-subtext">Développement d'applications web solides, sécurisées et maintenables.</p>
+							<strong>Architecture Fullstack & APIs</strong>
+							<p class="highlight-subtext">Développement complet d'applications web solides, de la conception d'APIs au Frontend réactif.</p>
 						</div>
 					</div>
 
@@ -34,7 +32,7 @@
 						<i class="fa-solid fa-code highlight-icon"></i>
 						<div>
 							<strong>Développement Web Sur-mesure</strong>
-							<p class="highlight-subtext">Sites vitrines, plateformes SaaS et extensions sur-mesure.</p>
+							<p class="highlight-subtext">Plateformes SaaS, applications métier et extensions Chrome innovantes.</p>
 						</div>
 					</div>
 				</div>

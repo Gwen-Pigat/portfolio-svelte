@@ -59,7 +59,7 @@
 			<span class="section-tag">Contact</span>
 			<h2 class="section-title">Discutons de Votre Projet Web</h2>
 			<p class="section-desc">
-				Un projet de site web en PHP / Symfony, une application sur-mesure ou une extension Chrome ? Contactez-moi !
+				Un projet d'application web, une plateforme SaaS, une extension Chrome ou un besoin en architecture Fullstack ? Contactez-moi !
 			</p>
 		</div>
 
@@ -141,7 +141,7 @@
 							id="subject"
 							bind:value={subject}
 							class="form-control"
-							placeholder="Projet PHP / Symfony, Site Web, Extension..."
+							placeholder="Projet Application Fullstack, SaaS, Extension Chrome..."
 							required
 						/>
 					</div>

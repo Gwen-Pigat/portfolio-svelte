@@ -35,7 +35,7 @@
 
 		<div class="footer-copy">
 			<img src="/images/favicon.png" alt="Orizenh" class="footer-orizenh-img" />
-			<span>Portfolio de Gwenaël PIGAT — Développeur Web PHP / Symfony & Tech Lead. Orizenh.</span>
+			<span>Portfolio de Gwenaël PIGAT — Développeur Web Fullstack & Tech Lead. Orizenh.</span>
 		</div>
 	</div>
 </footer>

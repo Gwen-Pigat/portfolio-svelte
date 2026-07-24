@@ -10,42 +10,42 @@
 
 	const skillCards: SkillCard[] = [
 		{
-			title: 'PHP / Symfony',
+			title: 'Fullstack & Backend',
 			isFeatured: true,
-			iconClass: 'fa-brands fa-php',
+			iconClass: 'fa-solid fa-layer-group',
 			iconColorClass: 'skill-icon-purple',
-			badge: 'Expertise Principale',
+			badge: 'Cœur de Métier',
 			items: [
-				'PHP 8.x (Programmation Orientée Objet avancée)',
-				'Symfony (Architecture MVC, Bundle, Services)',
-				'Doctrine ORM & Migrations de base de données',
-				'APIs REST (API Platform, Serializer)',
-				'Twig Templating & Form Components'
+				'Architecture Frontend & Backend sur-mesure',
+				'APIs REST & Microservices (Node.js, Go, PHP/Symfony)',
+				'Bases de données SQL & ORM (MySQL, PostgreSQL, Doctrine)',
+				'Conception SaaS, Webhooks & Authentification',
+				'Sécurité, Scalabilité & Performance Server-Side'
 			]
 		},
 		{
-			title: 'Développement Web Fullstack',
+			title: 'Frontend & UI/UX',
 			isFeatured: false,
 			iconClass: 'fa-solid fa-laptop-code',
-			iconColorClass: '',
+			iconColorClass: 'skill-icon-cyan',
 			items: [
-				'Conception de sites internet sur-mesure',
-				'Applications web modernes & SaaS',
 				'Svelte / SvelteKit (Applications Web Réactives)',
-				'JavaScript (ES6+), HTML5 & Vanilla CSS',
-				'Interfaces réactives & responsive design'
+				'TypeScript & JavaScript moderne (ES6+)',
+				'HTML5, Vanilla CSS & Glassmorphism',
+				'Interfaces utilisateur modernes & Responsive Design',
+				'Optimisation UX/UI & Performance Web'
 			]
 		},
 		{
-			title: 'Écosystème & Extensions',
+			title: 'Écosystème & Outillage',
 			isFeatured: false,
 			iconClass: 'fa-solid fa-cubes',
-			iconColorClass: 'skill-icon-cyan',
+			iconColorClass: '',
 			items: [
 				'Extensions Chrome Manifest V3 (SidePanel API)',
-				'Go (Golang) / Microservices',
-				'Node.js & TypeScript',
-				'Git, CI/CD & Tech Leadership'
+				'Node.js, Go (Golang) & PHP 8 / Symfony',
+				'Git, CI/CD, Docker & Déploiements Cloud',
+				'Tech Leadership, Architecture & Mentorat'
 			]
 		}
 	];
@@ -55,10 +55,9 @@
 	<div class="container">
 		<div class="section-header">
 			<span class="section-tag">Expertise Technique</span>
-			<h2 class="section-title">Compétences & Langages</h2>
+			<h2 class="section-title">Compétences & Stack Fullstack</h2>
 			<p class="section-desc">
-				Mon expertise principale s'appuie sur le langage PHP et le framework Symfony pour bâtir des applications web
-				robustes et évolutives.
+				Un savoir-faire complet pour concevoir, développer et déployer des applications web performantes du Frontend jusqu'à l'infrastructure Backend.
 			</p>
 		</div>
 

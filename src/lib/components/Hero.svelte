@@ -3,20 +3,15 @@
 		<div class="hero-content">
 			<div class="hero-status-pill">
 				<span class="status-dot"></span>
-				Développeur Web PHP / Symfony & Tech Lead
+				Développeur Web Fullstack & Tech Lead
 			</div>
 
 			<h1 class="hero-title">
-				Expert <span class="gradient-text">PHP & Symfony</span> | Sites &
-				Apps Web
+				Développeur <span class="gradient-text">Fullstack & Tech Lead</span> | Apps & SaaS
 			</h1>
 
 			<p class="hero-subtitle">
-				Bienvenue ! Je suis <strong>Gwenaël PIGAT</strong>, développeur
-				web avec une expertise principale en
-				<strong>PHP & Symfony</strong>. Je conçois des sites web
-				professionnels sur-mesure, des applications web performantes et
-				des extensions Chrome innovantes.
+				Bienvenue ! Je suis <strong>Gwenaël PIGAT</strong>, Développeur Web Fullstack & Tech Lead. Je conçois des sites web professionnels sur-mesure, des applications SaaS performantes et des extensions Chrome innovantes en maîtrisant l'ensemble de la chaîne de valeur web.
 			</p>
 
 			<div class="hero-actions">
@@ -44,15 +39,15 @@
 			<div class="hero-stats">
 				<div class="stat-item">
 					<span class="stat-number gradient-text-cyan"
-						>PHP / Symfony</span
+						>Fullstack</span
 					>
-					<span class="stat-label">Expertise Principale</span>
+					<span class="stat-label">Frontend & Backend</span>
 				</div>
 				<div class="stat-item">
 					<span class="stat-number gradient-text-purple"
-						>Fullstack</span
+						>Tech Lead</span
 					>
-					<span class="stat-label">Web & Architecture API</span>
+					<span class="stat-label">Architecture & APIs</span>
 				</div>
 				<div class="stat-item">
 					<span class="stat-number gradient-text-cyan">4</span>
@@ -78,47 +73,41 @@
 						<span class="dot dot-green"></span>
 					</div>
 					<span class="terminal-title"
-						>ProfilDeveloppeur.php — Orizenh</span
+						>ProfilDeveloppeur.ts — Orizenh</span
 					>
 				</div>
 				<div class="code-content">
-					<span class="code-keyword">&lt;?php</span><br /><br />
-					<span class="code-keyword">namespace</span>
-					App\Portfolio;<br /><br />
-					<span class="code-keyword">class</span>
+					<span class="code-keyword">export class</span>
 					<span class="code-type">GwenaelPigat</span>
 					&#123;<br />
-					&nbsp;&nbsp;<span class="code-keyword">public const</span>
-					CORE_EXPERTISE =
-					<span class="code-string">"PHP / Symfony"</span>;<br />
-					&nbsp;&nbsp;<span class="code-keyword">public const</span>
+					&nbsp;&nbsp;<span class="code-keyword">public readonly</span>
 					ROLE =
 					<span class="code-string"
-						>"Développeur Web & Tech Lead"</span
+						>"Développeur Web Fullstack & Tech Lead"</span
 					>;<br /><br />
-					&nbsp;&nbsp;<span class="code-keyword">public function</span
-					> <span class="code-func">getSkills</span>():
-					<span class="code-type">array</span>
+					&nbsp;&nbsp;<span class="code-keyword">public</span>
+					<span class="code-func">getExpertise</span>():
+					<span class="code-type">string[]</span>
 					&#123;<br />
 					&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-keyword"
 						>return</span
 					>
 					[<br />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-						class="code-string">"PHP 8 / Symfony"</span
+						class="code-string">"Frontend: Svelte / SvelteKit, TS"</span
 					>,<br />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-						class="code-string">"Svelte / SvelteKit"</span
+						class="code-string">"Backend: Node.js, Go, PHP / Symfony"</span
 					>,<br />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-						class="code-string">"Applications Web & SaaS"</span
+						class="code-string">"Applications Web & SaaS sur-mesure"</span
 					>,<br />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
 						class="code-string"
-						>"Extensions Chrome (SidePanel)"</span
+						>"Extensions Chrome (SidePanel API)"</span
 					>,<br />
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span
-						class="code-string">"Go / Node.js / TypeScript"</span
+						class="code-string">"APIs REST, SQL & DevOps / Docker"</span
 					><br />
 					&nbsp;&nbsp;&nbsp;&nbsp;];<br />
 					&nbsp;&nbsp;&#125;<br />
@@ -128,11 +117,11 @@
 
 			<div class="floating-badge floating-badge-1">
 				<div class="badge-icon badge-icon-purple">
-					<i class="fa-brands fa-php"></i>
+					<i class="fa-solid fa-layer-group"></i>
 				</div>
 				<div class="badge-text">
-					<strong>PHP & Symfony</strong>
-					<span>Cœur d'expertise web</span>
+					<strong>Fullstack & APIs</strong>
+					<span>Frontend, Backend & Cloud</span>
 				</div>
 			</div>
 
